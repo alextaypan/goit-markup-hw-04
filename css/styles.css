@@ -60,7 +60,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 
 .section {
@@ -168,6 +167,11 @@ img {
   margin-right: 10px;
 }
 
+.nav-icon-phone {
+  width: 10px;
+  height: 16px;
+}
+
 .container-nav:not(:last-child){
   margin-right: 30px;
 }
@@ -245,7 +249,6 @@ address {
   align-items: baseline;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid tomato;
 }
 
 .footer-wrapper {
