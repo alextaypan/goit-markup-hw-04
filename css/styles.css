@@ -245,7 +245,9 @@ address {
   align-items: baseline;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid tomato;
 }
+
 .footer-wrapper {
   margin-right: 70px;
 }
@@ -282,6 +284,11 @@ address {
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus {
+  background-color: var(--accent-color) ;
 }
 
 .footer-icons {
