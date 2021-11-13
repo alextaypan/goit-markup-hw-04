@@ -71,6 +71,16 @@ img {
   padding-bottom: 0;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
 /* Header&Footer */
 
 .page-header {
@@ -139,6 +149,28 @@ img {
   color: var(--accent-color);
 }
 
+.container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-mail, .link {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.container-nav:not(:last-child){
+  margin-right: 30px;
+}
+
+
 .contacts-header .link {
   font-weight: 500;
   font-size: 14px;
@@ -150,6 +182,17 @@ img {
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.container-nav .link-mail:hover,
+.container-nav .link-mail:focus,
+.container-nav .link:hover,
+.container-nav .link:focus {
+  color: var(--accent-color)
+}
+
+.nav-icon {
+  fill: currentColor;
 }
 
 .contacts-footer .link {
@@ -373,6 +416,7 @@ address {
   border-radius: 4px;
 
   margin-bottom: 30px;
+  padding: 25px 100px;
 }
 
 .advantages-icon {
@@ -447,7 +491,10 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 16px 32px 30px;
+  margin-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
 }
 
 .team-list-container {
@@ -494,17 +541,42 @@ address {
   justify-content: center;
 }
 
-.clients-icon {
-  width: 106px;
-  height: 160px;
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.clients-item:last-child {
+  margin-right: 0;
+}
 
-  margin-bottom: 50px;
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icons-color);
+}
+
+.clients-item-link:hover .clients-icon,
+.clients-item-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-item:hover .clients-item-link,
+.clients-item:focus .clients-item-link {
+  border: 1px solid var(--accent-color);
 }
