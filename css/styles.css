@@ -60,6 +60,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 .section {
@@ -238,6 +239,57 @@ address {
   margin-bottom: 9px;
 }
 
+.main-footer-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: baseline;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-wrapper {
+  margin-right: 70px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.footer-nav-list {
+  display: flex;
+}
+
+.footer-item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  margin-right: 10px;
+}
+
+.footer-item-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--background-color);
+}
+
 /* Buttons */
 
 .hero-button {
@@ -401,6 +453,16 @@ address {
   margin-right: 30px;
 }
 
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -419,16 +481,6 @@ address {
   height: 70px;
 }
 
-.advantages-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-bottom: 10px;
-}
-
 .advantages-descr {
   font-size: 14px;
   line-height: 1.71;
@@ -436,6 +488,7 @@ address {
   color: var(--title-text-color);
 
   max-width: 270px;
+  margin-right: 10px;
 }
 
 /* Team */
