@@ -318,15 +318,13 @@ address {
   margin-right: auto;
   min-width: 200px;
   min-height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--primary-text-color);
-  background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-list .filter {
@@ -620,7 +618,6 @@ address {
   height: 100%;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  padding: 16px 32px;
 }
 
 .clients-icon {
